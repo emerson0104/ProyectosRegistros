@@ -20,9 +20,26 @@ namespace ESTUDIANTES
 
         private void RegistrarEstudiandteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegitroEstudiante reg = new RegitroEstudiante();
-            reg.MdiParent = this;
-            reg.Show();
+            REstudiante rEstudiante = new REstudiante();
+          
+            rEstudiante.Show();
+        }
+
+        private void ConsultarEstudianteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaFormulario1 rEstudiant = new ConsultaFormulario1();
+           
+            rEstudiant.Show();
+        }
+
+        private void RegistrarInscripcioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

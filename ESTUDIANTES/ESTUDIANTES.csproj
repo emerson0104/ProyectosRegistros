@@ -53,8 +53,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Inscripcion.cs" />
     <Compile Include="BLL\RgistroEst.cs" />
+    <Compile Include="UI\Consultas\ConsultaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaFormulario.Designer.cs">
+      <DependentUpon>ConsultaFormulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\scripts\IsncripcionesDb.cs" />
     <Compile Include="DAL\scripts\Contexto.cs" />
+    <Compile Include="ENTIDADES\Inscripciones.cs" />
     <Compile Include="ENTIDADES\RegistroEstudiante.cs" />
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
@@ -64,12 +73,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegitroEstudiante.cs">
+    <Compile Include="UI\Consultas\ConsultaInscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegitroEstudiante.Designer.cs">
-      <DependentUpon>RegitroEstudiante.cs</DependentUpon>
+    <Compile Include="UI\Consultas\ConsultaInscripcion.Designer.cs">
+      <DependentUpon>ConsultaInscripcion.cs</DependentUpon>
     </Compile>
+    <Compile Include="REstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REstudiante.Designer.cs">
+      <DependentUpon>REstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RInscripcion.Designer.cs">
+      <DependentUpon>RInscripcion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Consultas\ConsultaFormulario.resx">
+      <DependentUpon>ConsultaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,8 +106,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegitroEstudiante.resx">
-      <DependentUpon>RegitroEstudiante.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Consultas\ConsultaInscripcion.resx">
+      <DependentUpon>ConsultaInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REstudiante.resx">
+      <DependentUpon>REstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RInscripcion.resx">
+      <DependentUpon>RInscripcion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -101,10 +131,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resource\" />
-    <Folder Include="UI\" />
+    <Folder Include="UI\Registros\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\scripts\script.sql" />
+    <Content Include="DAL\script.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

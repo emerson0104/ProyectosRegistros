@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+using System.Linq.Expressions;
 using ESTUDIANTES.ENTIDADES;
 using ESTUDIANTES.DAL.scripts;
-using System.Data.Entity;
+
 
 namespace ESTUDIANTES.BLL
 {
-    public class RgistroEst
+    public class RgistroEstBll
     {
         public static bool ActualizarMonto(int Id, double nuevoMonto)
         {
@@ -115,6 +114,24 @@ namespace ESTUDIANTES.BLL
 
             }
             return estado;
+        }
+        public static List<RegistroEstudiantes> GetList(Expression<Func<RegistroEstudiantes, bool>> persona)
+        {
+            List<RegistroEstudiantes> Lista = new List<RegistroEstudiantes>();
+            Contexto db = new Contexto();
+            try
+            {
+                Lista = db.RegistroEstudiantes.Where(persona).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                db.Dispose();
+            }
+            return Lista;
         }
     }
 }
