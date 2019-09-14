@@ -34,7 +34,7 @@ namespace ESTUDIANTES
 
         private void RegistrarInscripcioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void ConsultarToolStripMenuItem_Click(object sender, EventArgs e)

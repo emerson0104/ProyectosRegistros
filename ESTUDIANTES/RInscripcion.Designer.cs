@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RInscripcion));
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
@@ -58,9 +59,11 @@
             // 
             // Buscarbutton
             // 
-            this.Buscarbutton.Location = new System.Drawing.Point(540, 27);
+            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
+            this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buscarbutton.Location = new System.Drawing.Point(540, 4);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(144, 68);
+            this.Buscarbutton.Size = new System.Drawing.Size(144, 45);
             this.Buscarbutton.TabIndex = 77;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.UseVisualStyleBackColor = true;
@@ -68,6 +71,8 @@
             // 
             // Eliminarbutton
             // 
+            this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
+            this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Eliminarbutton.Location = new System.Drawing.Point(580, 368);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(144, 39);
@@ -78,6 +83,8 @@
             // 
             // Guardarbutton
             // 
+            this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
+            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Guardarbutton.Location = new System.Drawing.Point(351, 368);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(144, 39);
@@ -88,6 +95,8 @@
             // 
             // Nuevobutton
             // 
+            this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
+            this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Nuevobutton.Location = new System.Drawing.Point(136, 368);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(144, 39);
@@ -133,7 +142,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(121, 132);
+            this.label7.Location = new System.Drawing.Point(118, 139);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 68;
@@ -141,7 +150,7 @@
             // 
             // DepositostextBox
             // 
-            this.DepositostextBox.Location = new System.Drawing.Point(212, 129);
+            this.DepositostextBox.Location = new System.Drawing.Point(212, 136);
             this.DepositostextBox.Name = "DepositostextBox";
             this.DepositostextBox.Size = new System.Drawing.Size(202, 20);
             this.DepositostextBox.TabIndex = 67;
@@ -158,7 +167,7 @@
             // 
             // ComentariostextBox
             // 
-            this.ComentariostextBox.Location = new System.Drawing.Point(212, 52);
+            this.ComentariostextBox.Location = new System.Drawing.Point(212, 59);
             this.ComentariostextBox.Name = "ComentariostextBox";
             this.ComentariostextBox.Size = new System.Drawing.Size(202, 20);
             this.ComentariostextBox.TabIndex = 57;
@@ -166,7 +175,7 @@
             // 
             // IDnumericUpDown
             // 
-            this.IDnumericUpDown.Location = new System.Drawing.Point(212, 4);
+            this.IDnumericUpDown.Location = new System.Drawing.Point(212, 13);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
             this.IDnumericUpDown.Size = new System.Drawing.Size(202, 20);
             this.IDnumericUpDown.TabIndex = 55;
@@ -174,7 +183,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 11);
+            this.label1.Location = new System.Drawing.Point(129, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 53;
@@ -198,7 +207,7 @@
             // 
             // IdEstudiantetextBox
             // 
-            this.IdEstudiantetextBox.Location = new System.Drawing.Point(212, 96);
+            this.IdEstudiantetextBox.Location = new System.Drawing.Point(212, 100);
             this.IdEstudiantetextBox.Name = "IdEstudiantetextBox";
             this.IdEstudiantetextBox.Size = new System.Drawing.Size(202, 20);
             this.IdEstudiantetextBox.TabIndex = 80;
